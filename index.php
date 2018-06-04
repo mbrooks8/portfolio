@@ -251,46 +251,6 @@ include("./assets/template/home/topNav.php");
         </div>
     </div>
 </div>
-
-
-<footer class="page-footer" style="margin-top:20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col l4 s12">
-                <h5 class="">Upcoming Events</h5>
-                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-            </div>
-            <div class="col l4 s12">
-                <h5 class="">Recent News</h5>
-                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-            </div>
-            <div class="col l4 s12">
-                <h5 class="">Seed Grants</h5>
-                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            © 2018 Copyright CFF All Rights Reserved
-            <a class="grey-text text-lighten-4 right" href="../php/login.php">Login</a>
-        </div>
-    </div>
-</footer>
-
-
-
-<div id="responseModal" class="modal z-depth-2">
-    <div class="modalBody" id="response">
-
-    </div>
-    <div class="modalFooter">
-        <ul>
-            <li><a class="dismiss">Okay</a></li>
-        </ul>
-    </div>
-</div>
-
 <?php
 include("./assets/template/home/botNav.php");
 ?>
