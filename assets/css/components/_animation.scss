@@ -1,0 +1,89 @@
+/*#############################################*/
+/*Animate in view*/
+/*#############################################*/
+.animation-element {
+	opacity: 0;
+	position: relative;
+
+	&.slide-left {
+		opacity: 0;
+		transition: all 750ms linear;
+		transform: translate3d(-100px, 0px, 0px);
+		&.in-view {
+			opacity: 1;
+			transform: translate3d(0px, 0px, 0px);
+		}
+	}
+
+	&.slide-right {
+		opacity: 0;
+		transition: all 750ms linear;
+		transform: translate3d(100px, 0px, 0px);
+		&.in-view {
+			opacity: 1;
+			transform: translate3d(0px, 0px, 0px);
+		}
+		&.fast {
+			opacity: 0;
+			transition: all 250ms linear;
+			transform: translate3d(100px, 0px, 0px);
+			&.in-view {
+				opacity: 1;
+				transform: translate3d(0px, 0px, 0px);
+			}
+		}
+	}
+
+	&.fade-in {
+		opacity: 0;
+		transition: all 1000ms linear;
+		&.in-view {
+			opacity: 1;
+			transform: translate3d(0px, 0px, 0px);
+		}
+	}
+}
+/*#############################################*/
+/*Hover Animations*/
+/*#############################################*/
+/*Infinite animations*/
+@keyframes bobLeft {
+	0%   {left:0px;}
+	50%  {left:-3px;}
+	100% {left:0px;}
+}
+.bobLeft:hover {
+	position:relative;
+	animation-name: bobLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bobRight {
+	0%   {left:0px;}
+	50%  {left:3px;}
+	100% {left:0px;}
+}
+.bobRight:hover {
+	position:relative;
+	animation-name: bobRight;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+
+/*Single Animations*/
+@keyframes pullLeft {
+	0%   {left:0px;}
+	50%  {left:-3px;}
+	100% {left:0px;}
+}
+.pullLeft:hover {
+	position:relative;
+	animation-name: pullLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+
+}
